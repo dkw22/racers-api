@@ -1,0 +1,39 @@
+section {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: fit-content;
+}
+
+.table {
+    width: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.table>thead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav {
+    padding-left: 20px;
+}
+
+body {
+    background-image: url('https://pbs.twimg.com/media/E5LQT38WUAEPQ2k?format=png&name=large');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}

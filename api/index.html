@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Racing API"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Racer API</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Racer API</a>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Racer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sample</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <section>
+        <form>
+            <div class="row">
+                <div class="col-auto seasons">
+                    <label for="season">Season</label>
+                    <input type="text" class="text" placeholder="Enter Season" id="season">
+                </div>
+                <div class="col-auto rounds">
+                    <label for="round">Round</label>
+                    <input type="text" class="text" placeholder="Enter Round" id="round">
+                </div>
+                <button type="button" class="btn btn-primary" onClick=getData()>Get Info</button>
+            </div>
+        </form>
+        <!--Racer Data Table Elements-->
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Position</th>
+                <th scope="col">Name</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Sponsor</th>
+                <th scope="col">Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td id="name-0"></td>
+                <td id="nationality-0"></td>
+                <td id="sponsor-0"></td>
+                <td id="points-0"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td id="name-1"></td>
+                <td id="nationality-1"></td>
+                <td id="sponsor-1"></td>
+                <td id="points-1"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td id="name-2"></td>
+                <td id="nationality-2"></td>
+                <td id="sponsor-2"></td>
+                <td id="points-2"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td id="name-3"></td>
+                <td id="nationality-3"></td>
+                <td id="sponsor-3"></td>
+                <td id="points-3"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td id="name-4"></td>
+                <td id="nationality-4"></td>
+                <td id="sponsor-4"></td>
+                <td id="points-4"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td id="name-5"></td>
+                <td id="nationality-5"></td>
+                <td id="sponsor-5"></td>
+                <td id="points-5"></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td id="name-6"></td>
+                <td id="nationality-6"></td>
+                <td id="sponsor-6"></td>
+                <td id="points-6"></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
